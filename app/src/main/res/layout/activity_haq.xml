@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primary_dark">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="4"
+        android:rowCount="26">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/haq_question"
+            android:textColor="@color/text_color_dark"
+            android:elegantTextHeight="false"
+            android:textSize="40dp"
+            android:minHeight="140dp"
+            android:layout_columnSpan="4"
+            android:layout_rowSpan="3"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_margin="10dp" />
+
+        <EditText android:id="@+id/edit_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_dark"
+            android:hint="@string/edit_message"
+            android:minHeight="60dp"
+            android:layout_columnSpan="4"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_rowWeight="0"
+            android:textSize="36dp" />
+
+        <Button
+            android:background="@color/button_light"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:textColor="@color/text_color_primary"
+            android:text="@string/button_refresh"
+            android:onClick="getHaqQuestion"
+            android:id="@+id/button3"
+            android:layout_column="1"
+            android:layout_row="5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:background="@color/button_light"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:textColor="@color/text_color_primary"
+            android:text="@string/button_send"
+            android:onClick="sendMessage"
+            android:id="@+id/button2"
+            android:layout_column="3"
+            android:layout_row="5"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp" />
+
+        <Button
+            android:background="@color/button_light"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:textColor="@color/text_color_primary"
+            android:text="My Profile"
+            android:id="@+id/button4"
+            android:onClick="viewMyProfile"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_column="1"
+            android:layout_row="25"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:nestedScrollingEnabled="true" />
+
+        <Button
+            android:background="@color/button_light"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:textColor="@color/text_color_primary"
+            android:text="Log Out"
+            android:id="@+id/button"
+            android:onClick="logOut"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_column="3"
+            android:layout_row="25"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+    </GridLayout>
+
+</LinearLayout>
