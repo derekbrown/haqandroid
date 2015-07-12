@@ -11,6 +11,7 @@ public class App extends Application{
     @Override
     public void onCreate() {
         super.onCreate();
+        Parse.enableLocalDatastore(this);
         Parse.initialize(this, "OCqBW8JbycHKmfDmEKTR6GKK0gjj32SQtRhvlgyP", "ZbAf5V8CCuMBYEUGVw53678reWUjDZ3QBlMn1azU");
         ParseFacebookUtils.initialize(getApplicationContext());
         ParseUser currentUser = ParseUser.getCurrentUser();

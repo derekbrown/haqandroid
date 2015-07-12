@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Haq.iml" filepath="$PROJECT_DIR$/Haq.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/haq.iml" filepath="$PROJECT_DIR$/haq.iml" />
     </modules>
   </component>
 </project>
